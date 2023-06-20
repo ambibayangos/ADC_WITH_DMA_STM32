@@ -1691,3 +1691,45 @@ Finished building: default.size.stdout
  
 Finished building: ADC.list
  
+22:08:14 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\ADC_WITH_DMA_STM32\ADC\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC.elf
+ 
+arm-none-eabi-size   ADC.elf 
+arm-none-eabi-objdump -h -S  ADC.elf  > "ADC.list"
+   text	   data	    bss	    dec	    hex	filename
+  22036	    120	   3992	  26148	   6624	ADC.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC.list
+ 
+22:08:21 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-size   ADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22036	    120	   3992	  26148	   6624	ADC.elf
+Finished building: default.size.stdout
+ 
+22:08:23 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-size   ADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22036	    120	   3992	  26148	   6624	ADC.elf
+Finished building: default.size.stdout
+ 
+22:08:24 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-size   ADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22036	    120	   3992	  26148	   6624	ADC.elf
+Finished building: default.size.stdout
+ 
+22:08:27 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-size   ADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22036	    120	   3992	  26148	   6624	ADC.elf
+Finished building: default.size.stdout
+ 

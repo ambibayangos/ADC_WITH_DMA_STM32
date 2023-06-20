@@ -94,10 +94,8 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-  ADC1->CR &= ~ADC_CR_DEEPPWD; // Get out of Deep-power-down mode
-  ADC1->CR |= ADC_CR_ADVREGEN | ADC_CR_ADCAL; // Enable ADC voltage regulator
-  while(ADC1->CR & ADC_CR_ADCAL); // Wait for ADC to finish calibrating
-  ADC1->CR |= ADC_CR_DEEPPWD; // Re-enable the Deep-power-down-mode
+  ADC1->CR &= ~ADC_CR_DEEPPWD_Msk; // Get out of Deep-power-down mode
+  ADC1->CR |= ADC_CR_ADVREGEN_Msk; // Enable ADC voltage regulator
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */

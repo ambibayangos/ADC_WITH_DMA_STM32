@@ -96,8 +96,8 @@ int main(void)
   /* USER CODE BEGIN SysInit */
   ADC1->CR &= ~ADC_CR_DEEPPWD; // Get out of Deep-power-down mode
   ADC1->CR |= ADC_CR_ADVREGEN | ADC_CR_ADCAL; // Enable ADC voltage regulator
-  while(ADC1->CR & ADC_CR_ADCAL); // Wait for ADC to finish calibrating
-  ADC1->CR |= ADC_CR_DEEPPWD; // Re-enable the Deep-power-down-mode
+  while(ADC1->CR & ADC_CR_ADCAL);
+  // TODO NEED TO WAIT FOR ADCAL TO BE RESET
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
