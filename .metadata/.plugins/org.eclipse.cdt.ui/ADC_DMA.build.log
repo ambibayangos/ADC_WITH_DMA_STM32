@@ -1,0 +1,16 @@
+20:53:00 **** Incremental Build of configuration Debug for project ADC_DMA ****
+make -j8 all 
+arm-none-eabi-gcc -o "ADC_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\ADC_WITH_DMA_STM32\ADC_DMA\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_DMA.elf
+ 
+arm-none-eabi-size   ADC_DMA.elf 
+arm-none-eabi-objdump -h -S  ADC_DMA.elf  > "ADC_DMA.list"
+   text	   data	    bss	    dec	    hex	filename
+  18924	     20	   3924	  22868	   5954	ADC_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC_DMA.list
+ 
+
+20:53:01 Build Finished. 0 errors, 0 warnings. (took 1s.16ms)
+
