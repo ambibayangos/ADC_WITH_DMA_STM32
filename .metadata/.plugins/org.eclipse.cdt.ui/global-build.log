@@ -1593,3 +1593,101 @@ Finished building: default.size.stdout
  
 Finished building: ADC.list
  
+21:02:44 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:39: warning: '%hu' directive writing between 1 and 5 bytes into a region of size 0 [-Wformat-overflow=]
+  127 |    sprintf(uart_tx_buffer, "ADC Data: %hu mV\r\n", adc_1st_buffer_value);
+      |                                       ^~~
+../Core/Src/main.c:127:4: note: 'sprintf' output between 17 and 21 bytes into a destination of size 10
+  127 |    sprintf(uart_tx_buffer, "ADC Data: %hu mV\r\n", adc_1st_buffer_value);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\ADC_WITH_DMA_STM32\ADC\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC.elf
+ 
+arm-none-eabi-size   ADC.elf 
+arm-none-eabi-objdump -h -S  ADC.elf  > "ADC.list"
+   text	   data	    bss	    dec	    hex	filename
+  21908	    120	   3952	  25980	   657c	ADC.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC.list
+ 
+21:02:56 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:39: warning: '%hu' directive writing between 1 and 5 bytes into a region of size 0 [-Wformat-overflow=]
+  127 |    sprintf(uart_tx_buffer, "ADC Data: %hu mV\r\n", adc_1st_buffer_value);
+      |                                       ^~~
+../Core/Src/main.c:127:4: note: 'sprintf' output between 17 and 21 bytes into a destination of size 10
+  127 |    sprintf(uart_tx_buffer, "ADC Data: %hu mV\r\n", adc_1st_buffer_value);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\ADC_WITH_DMA_STM32\ADC\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC.elf
+ 
+arm-none-eabi-size   ADC.elf 
+arm-none-eabi-objdump -h -S  ADC.elf  > "ADC.list"
+   text	   data	    bss	    dec	    hex	filename
+  21988	    120	   3952	  26060	   65cc	ADC.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC.list
+ 
+21:03:07 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-size   ADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21988	    120	   3952	  26060	   65cc	ADC.elf
+Finished building: default.size.stdout
+ 
+21:04:48 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:39: warning: '%hu' directive writing between 1 and 5 bytes into a region of size 0 [-Wformat-overflow=]
+  127 |    sprintf(uart_tx_buffer, "ADC Data: %hu mV\r\n", adc_1st_buffer_value);
+      |                                       ^~~
+../Core/Src/main.c:127:4: note: 'sprintf' output between 17 and 21 bytes into a destination of size 10
+  127 |    sprintf(uart_tx_buffer, "ADC Data: %hu mV\r\n", adc_1st_buffer_value);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\ADC_WITH_DMA_STM32\ADC\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC.elf
+ 
+arm-none-eabi-size   ADC.elf 
+arm-none-eabi-objdump -h -S  ADC.elf  > "ADC.list"
+   text	   data	    bss	    dec	    hex	filename
+  21988	    120	   3952	  26060	   65cc	ADC.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC.list
+ 
+21:05:36 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\ADC_WITH_DMA_STM32\ADC\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC.elf
+ 
+arm-none-eabi-size   ADC.elf 
+arm-none-eabi-objdump -h -S  ADC.elf  > "ADC.list"
+   text	   data	    bss	    dec	    hex	filename
+  21988	    120	   3992	  26100	   65f4	ADC.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC.list
+ 
+21:06:19 **** Incremental Build of configuration Debug for project ADC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\ADC_WITH_DMA_STM32\ADC\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC.elf
+ 
+arm-none-eabi-size   ADC.elf 
+arm-none-eabi-objdump -h -S  ADC.elf  > "ADC.list"
+   text	   data	    bss	    dec	    hex	filename
+  21988	    120	   3992	  26100	   65f4	ADC.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC.list
+ 

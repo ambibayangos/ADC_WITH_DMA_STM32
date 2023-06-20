@@ -125,7 +125,9 @@ int main(void)
 
 	  uint16_t adc_1st_buffer_value = adc_buffer[0];
 	  sprintf(uart_tx_buffer, "ADC Data: %hu mV\r\n", adc_1st_buffer_value);
+
 	  HAL_UART_Transmit(&huart2,(uint8_t *)uart_tx_buffer, strlen(uart_tx_buffer) , HAL_MAX_DELAY); // transmit adc data through uart
+
 	  HAL_Delay(100);
     /* USER CODE END WHILE */
 
